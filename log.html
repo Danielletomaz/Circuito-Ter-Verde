@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Circuito Terê Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="pag1">
+        <nav>
+            <img src="logo4.jpg" class="imglogo">
+            <button class="menu-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="#introdução">Sobre</a></li>
+                <li><a href="#experiencias">Atividades</a></li>
+                <li><a href="#eventos-noticias">Novidades</a></li>
+                <li><a href="#fotos">Parques</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+          <h1>Administração do site</h1>
+          <p>Bem-vindo à área de administração do site!</p>
+          <p>
+            Você pode gerenciar o conteúdo e as configurações do site a partir
+            daqui.
+          </p>
+        </div>
+        
+        <div class="container">
+        <div class="form-container">
+            <form>
+                <h2>Gerenciar Eventos</h2>
+                <!-- CAMPO NOME DO EVENTO -->
+                <label for="evento">Evento:</label>
+                <input type="text" id="evento" placeholder="Digite o nome do evento">
+        
+                <!-- CAMPO ESCOLHA PARQUE -->
+                <label for="parque">Escolha o parque:</label>
+                <select id="parque" name="parque">
+                    <option value="">-- Selecione --</option>
+                    <option value="serra">Serra dos Órgãos</option>
+                    <option value="tres-picos">Três Picos</option>
+                    <option value="montanhas">Montanhas de Teresópolis</option>
+                </select>
+        
+                <!-- CAMPO DATA -->
+                <label for="data">Data do evento:</label>
+                <input type="date" id="data">
+        
+                <!-- CAMPO HORÁRIO -->
+                <label for="hora-inicio">Início:</label>
+                <input type="time" id="hora-inicio">
+        
+                <label for="hora-fim">Término:</label>
+                <input type="time" id="hora-fim">
+        
+                <!-- CAMPO ESCOLHA FOTO -->
+                <label for="foto">Escolher Foto:</label>
+                <input type="file" id="foto" accept="image/*">
+        
+                <!-- CAMPO TEXTO -->
+                <label for="texto">Texto do evento:</label>
+                <textarea id="texto" rows="4" placeholder="Escreva a descrição do evento"></textarea>
+        
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+        </div>
+        
+        <div class="container">
+        <div class="form-container">
+            <form>
+                <h2>Adicionar Notícia</h2>
+                <!-- CAMPO TÍTULO DA NOTÍCIA -->
+                <label for="titulo">Título da Notícia:</label>
+                <input type="text" id="titulo" placeholder="Digite o título da notícia">
+        
+                <!-- CAMPO ESCOLHA PARQUE -->
+                <label for="parque-noticia">Escolha o parque:</label>
+                <select id="parque-noticia" name="parque-noticia">
+                    <option value="">-- Selecione --</option>
+                    <option value="serra">Serra dos Órgãos</option>
+                    <option value="tres-picos">Três Picos</option>
+                    <option value="montanhas">Montanhas de Teresópolis</option>
+                </select>
+        
+                <!-- CAMPO DATA -->
+                <label for="data-noticia">Data da Notícia:</label>
+                <input type="date" id="data-noticia">
+        
+                <!-- CAMPO ESCOLHA FOTO -->
+                <label for="foto-noticia">Escolher Foto:</label>
+                <input type="file" id="foto-noticia" accept="image/*">
+        
+                <!-- CAMPO TEXTO -->
+                <label for="texto-noticia">Texto da Notícia:</label>
+                <textarea id="texto-noticia" rows="4" placeholder="Escreva a notícia aqui"></textarea>
+        
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+        </div>
+    </main>  
+    <footer class="footer">
+        <p>&copy; 2025 Circuito Terê Verde. Todos os direitos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+</html>
