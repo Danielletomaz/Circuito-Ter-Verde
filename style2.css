@@ -1,0 +1,622 @@
+:root {
+    --primary: #22543d;
+    --secondary: #68d391;
+    --accent: #f6e05e;
+    --white: #fff;
+    --gray: #f7fafc;
+    --dark: #111;
+    --shadow: 0 4px 20px #0002;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #f6e05e;
+    font-size: 45px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#fotos {
+    background-color: #22543d;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--primary);
+    color: var(--dark);
+}
+
+header {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Serra_dos_%C3%93rg%C3%A3os_II.jpg/1280px-Serra_dos_%C3%93rg%C3%A3os_II.jpg') center/cover no-repeat;
+    height: 200vh;
+    position: relative;
+    color: var(--white);
+
+}
+
+.pag1 {
+    background: url('img2.jpg') center/cover no-repeat;
+    height: 200vh;
+    position: relative;
+    color: var(--white);
+    
+
+}
+.pag3 {
+    background: url('tartaruga.jpg') center/cover no-repeat;
+    height: 200vh;
+    position: relative;
+    color: var(--white);
+}
+
+.pag4 {
+    background: url('estadual14.jpg') center/cover no-repeat;
+    height: 200vh;
+    position: relative;
+    color: var(--white);
+}
+
+nav {
+    background-color: #22543d;
+    display: flex;
+    align-items: center;
+    justify-content:center; /* Espaça os itens entre os lados esquerdo e direito */
+    padding: 24px 10px; /* Ajusta o espaçamento interno */
+    position: ; /* Fixa o menu no topo */
+    top: 0; /* Fixa no topo da página */
+    left: 0; /* Fixa no lado esquerdo da página */
+    width: 100%; /* Ocupa toda a largura da tela */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    text-align: ; /* Alinha o texto à direita */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+.pag1 {
+    max-width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem; /* Espaçamento entre os links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.login-btn {
+    background: var(--accent); /* Cor de fundo do botão */
+    color: var(--dark); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 6px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 20px; /* Tamanho do texto */
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-left: auto; /* Alinha o botão à direita */
+    margin-right: 15px; /* Espaçamento à direita */
+    width: 100px; /* Largura fixa do botão */;
+}
+
+.login-btn:hover {
+    background: var(--secondary); /* Cor ao passar o mouse */
+    color: var(--white); /* Cor do texto ao passar o mouse */
+}
+.imglogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin: 0; /* Remove todas as margens */
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: 1px;
+    color:#f6e05e;
+    font-size: 40px;
+    margin-right: 10px;
+
+    
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+
+
+.banner {
+    position: sticky;
+    top: 40%;
+    left: 10vw;
+    transform: translateY(-40%);
+    background: rgba(34,84,61,0.83);
+    padding: 36px 48px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    max-width:100%;
+}
+
+.banner h1 {
+    font-size: 2.3rem;
+    margin: 0 0 12px 0;
+    color: var(--accent);
+}
+
+.banner p {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+}
+
+.btn-banner {
+    background: var(--secondary);
+    color: var(--dark);
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-banner:hover {
+    background: var(--accent);
+}
+
+.section {
+    padding: 60px 0;
+    background: var(--white);
+    font-size:20px;
+    background-color: rgba(34, 84, 61, 0.98);
+}
+.p {
+    color: #f6e05e;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+.section:nth-child(even) {
+    background: var(--gray);
+}
+
+.container {
+    width: 90vw;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--accent);
+    font-size: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+.atividades-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.atividades-lista h3 {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+.atividades-lista li {
+    background: #e6fffa;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+#sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #22543d;
+}
+
+#atividades {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #22543d;
+}
+
+.mapa {
+    margin: 32px 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+#contato {
+    background: rgba(34, 84, 61, 0.98);
+}
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+.form-contato button {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.form-contato button:hover {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+    nav {
+        padding: 24px 6vw 0 6vw;
+    }
+    .banner {
+        left: 6vw;
+        padding: 24px 18px;
+        max-width: 96vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        position: static;
+        transform: none;
+        margin: 36px 0 0 0;
+        text-align: center;
+    }
+    .gallery,
+    .atividades-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 64px;
+        right: 2vw;
+        background: rgba(34, 84, 61, 0.98);
+        border-radius: 10px;
+        padding: 10px 0;
+        min-width: 160px;
+        box-shadow: var(--shadow);
+        z-index: 999;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .nav-links li {
+        text-align: right;
+        padding: 10px 24px;
+    }
+}
+
+.texto {
+    font-size: 20px;
+    line-height: 1.6;
+    left: 6vw;
+    background-color: rgba(34, 84, 61, 0.98);
+    color: #f6e05e;
+    padding: 20px;    
+    box-shadow: 0 4px 20px #0002;
+    
+
+}
+.bg-section {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 6px 32px #0006 inset;
+    max-width: 100%;
+
+}
+
+.bg-content {
+    background: rgba(34, 84, 61, 0.70);
+    padding: 36px 48px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px #0003;
+    text-align: center;
+    max-width: 100%;
+}
+
+.parque-item {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 10px; /* Adiciona espaçamento entre os itens */
+    background: rgba(34, 84, 61, 0.70); /* Fundo com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease; /* Adiciona animação ao passar o mouse */
+    font-size: 25px; /* Define o tamanho do texto */
+}
+
+.parque-content img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transition: transform 0.3s ease; /* Adiciona animação ao passar o mouse */
+}
+
+.parque-content img:hover {
+    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+
+.parque-content h2 {
+    font-size: 1.2rem; /* Define o tamanho do texto */
+    margin-top: 10px; /* Adiciona espaçamento acima do título */
+    color:#f6e05e; /* Define a cor do texto */
+    display: block; /* Garante que o texto seja exibido como um bloco */
+    text-align: center; /* Centraliza o texto */
+    overflow: visible; /* Garante que o texto não seja cortado */
+    visibility: visible; /* Garante que o texto seja visível */
+
+}
+
+#eventos-noticias {
+    background: rgba(34, 84, 61, 0.70); /* Fundo com transparência */
+    padding: 36px 24px; /* Espaçamento interno */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3); /* Sombra */
+    color: #fff; /* Cor do texto */
+    margin: 20px auto; /* Centraliza a seção */
+    max-width: 100%; /* Limita a largura máxima */
+    min-height: 200px; /* Define uma altura mínima */
+    text-align: center; /* Centraliza o texto */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word; /* Compatibilidade com navegadores antigos */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o limite */
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+#eventos-noticias h2 {
+    font-size: 35px; /* Reduz o tamanho do título */
+    color: var(--accent); /* Cor do título */
+    margin-bottom: 25px; /* Espaçamento abaixo do título */
+    
+}
+
+#eventos-noticias p {
+    font-size: 20px; /* Reduz o tamanho do texto */
+    line-height: 1.5; /* Melhora o espaçamento entre linhas */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+#eventos-noticias ul li a {
+    font-size: 30px; /* Ajusta o tamanho dos links */
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#eventos-noticias ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+}
+
+#eventos-noticias ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+#eventos-noticias ul li a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+.eventos-noticias-imagens {
+    display: flex; /* Exibe as imagens lado a lado */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza as imagens */
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas menores */
+    margin: 20px 0; /* Espaçamento acima e abaixo do grupo de imagens */
+}
+
+.eventos-noticias-imagens img {
+    width: 400px; /* Define uma largura padrão */
+    height: 400px; /* Define uma altura padrão */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transition: transform 0.3s ease; /* Adiciona animação ao passar o mouse */
+}
+
+.eventos-noticias-imagens img:hover {
+    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+.btn-link {
+    display: inline-block;
+    background: var(--accent); /* Cor de destaque */
+    color: var(--dark); /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    border-radius: 6px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 1rem; /* Tamanho do texto */
+    transition: background 0.3s ease, color 0.3s ease; /* Animação suave */
+    margin: 0 auto; /* Centraliza o botão */
+}
+
+p {
+    text-align: center; /* Centraliza o texto */
+}
+
+.btn-link:hover {
+    background: var(--secondary); /* Cor ao passar o mouse */
+    color: var(--white); /* Cor do texto ao passar o mouse */
+}
+
+.bg-section.pedra-alpina{
+    background-image: url('pedraalpina.gif');
+}
+.bg-section.trilha {
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/59/35/35/visita-ao-parque-em-feverei_r.jpg?w=1400&h=-1&s=1');
+}
+.bg-section.cachoeira {
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/6b/fd/0f/img-20191227-132141-largejpg.jpg?w=900&h=-1&s=1');
+}
+.bg-section.mirante {
+    background-image: url('https://netdiario.com.br/wp-content/uploads/2025/04/zmochila-trilha-360-2-1536x931.jpg');
+}
+.bg-section.trilha-suspensa {
+    background-image: url('trilhasuspensa.gif');
+}
+.bg-section.mozart-catao {
+    background-image: url('mozartcatao.gif');
+}
+.bg-section.cartaopostal {
+    background-image: url('cartaopostal.gif');
+}
+
+.bg-section.pedra-sino {
+    background-image: url('pedradosino.gif');
+}
+.bg-section.parque {
+    background-image: url('parquenacional.gif');
+}
+.bg-section.trilha-do-jacu {
+    background-image: url('jacu.gif');
+}
+.bg-section.trilha-tangara {
+    background-image: url('tangara.gif');
+}
+.bg-section.trilha-tartaruga {
+    background-image: url('tartaruga1.gif');
+}
+.bg-section.trilha-camelo {
+    background-image: url('camelo.gif');
+}
+.bg-section.vidocq {
+    background-image: url('vidoc.gif');
+}
+
+.bg-section.cabeca-dragao {
+    background-image: url('cabecadragao.gif');
+}
+ 
+.bg-section.caixa-fosforo {
+    background-image: url('fosforo.gif');
+}
+
+.bg-section.trilha-elefante {
+    background-image: url('elefante.gif');
+}
+.bg-section.dois-bicos {
+    background-image: url('doisbicos.gif');
+}
+.bg-section.municipal {
+    background-image: url('parquemunicipal.gif');
+}
+.bg-section.estadual {
+    background-image: url('parqueestadual.gif');
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #eventos-noticias {
+        padding: 20px; /* Reduz o espaçamento interno */
+        max-width: 90%; /* Ajusta a largura em telas menores */
+    }
+
+    #eventos-noticias h2 {
+        font-size: 1.6rem; /* Reduz o tamanho do título */
+    }
+
+    #eventos-noticias p {
+        font-size: 0.9rem; /* Reduz o tamanho do texto */
+    }
+
+    #eventos-noticias ul li a {
+        font-size: 0.8rem; /* Reduz o tamanho dos links */
+    }
+}
+

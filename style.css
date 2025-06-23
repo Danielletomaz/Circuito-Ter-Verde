@@ -1,0 +1,433 @@
+:root {
+    --primary: #22543d;
+    --secondary: #68d391;
+    --accent: #f6e05e;
+    --white: #fff;
+    --gray: #f7fafc;
+    --dark: #111;
+    --shadow: 0 4px 20px #0002;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background-image: url('dragão5.webp');
+    background-position: center;
+    background-size: center;
+    min-height: 100vh;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center;
+    margin: 0; /* Remove margens do corpo */
+    padding: 0; /* Remove espaçamento interno do corpo */
+
+}
+main {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */    
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela */  
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Organiza os itens em coluna */   
+    padding: 20px; /* Adiciona espaçamento interno */   
+    margin-top: 200px;
+}
+header {
+    height: 200px; /* Define a altura do cabeçalho */
+    position: relative;
+    color: var(--white);
+    display: flex;
+    align-items:normal; /* Alinha os itens no centro verticalmente */
+   
+}
+nav {
+    position: sticky; /* Fixa o menu no topo da página */
+    width: 100%; /* Ocupa toda a largura da tela */
+    z-index: 10; /* Garante que o menu fique acima de outros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Espaça os itens */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    background-color: #22543d; /* Cor de fundo */
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os links */
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove espaçamento interno */
+    flex-wrap: wrap; /* Permite que os links se movam para a próxima linha se necessário */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    align-items: center; /* Alinha os links verticalmente */
+    flex-direction: row; /* Organiza os links em linha */
+    flex-grow: 1; /* Permite que os links ocupem o espaço disponível */
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px; /* Tamanho do texto dos links */
+    transition: color 0.3s ease;
+    padding: 10px 15px; /* Adiciona espaçamento interno aos links */
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.login-btn {
+    background: var(--accent); /* Cor de fundo do botão */
+    color: var(--dark); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 6px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 20px; /* Tamanho do texto */
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-left: auto; /* Alinha o botão à direita */
+    margin-right: 0; /* Espaçamento à direita */
+    width: 100px; /* Largura fixa do botão */;
+}
+
+.login-btn:hover {
+    background: var(--secondary); /* Cor ao passar o mouse */
+    color: var(--white); /* Cor do texto ao passar o mouse */
+}
+
+.imglogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin: 0; /* Remove todas as margens */
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+
+
+.banner {
+    position: sticky;
+    top: 40%;
+    left: 10vw;
+    transform: translateY(-40%);
+    background: rgba(34,84,61,0.83);
+    padding: 36px 48px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    max-width:100%;
+}
+
+.banner h1 {
+    font-size: 2.3rem;
+    margin: 0 0 12px 0;
+    color: var(--accent);
+}
+
+.banner p {
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+}
+
+.btn-banner {
+    background: var(--secondary);
+    color: var(--dark);
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-banner:hover {
+    background: var(--accent);
+}
+
+.section {
+    padding: 60px 0;
+    background: var(--white);
+    font-size:20px;
+    background-color: rgba(34, 84, 61, 0.98);
+}
+.login-section {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(34, 84, 61, 0.98);
+    border-radius: 10px;
+    color:#f6e05e;
+    padding: 30px 40px;
+    margin: 0 auto; /* Centraliza a seção na página */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    
+}
+    
+.login-section h2 {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    font-size: 36px;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(37, 91, 39, 0.98);
+    border-radius: 100px;
+    background-color: #22543d;
+    outline: none;
+    font-size: 18px;
+    padding: 20px 45px 20px 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.input-box input::placeholder {
+    color:rgba(255, 255, 255, 0.742)
+}
+.input-box i {
+    position: absolute; 
+    top:50%;
+    transform: translateY(-50%);
+    left: 90%;
+    font-size: 20px;
+}
+
+.senha {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px; /* Ajusta a margem para alinhar com o campo de senha */
+    font-size: 14px; /* Tamanho da fonte do texto */
+    color: #ffffff; /* Cor do texto */
+    text-align: center;
+}
+
+.senha label input {
+    accent-color: var(--gray);
+    width: 20px; /* Largura do checkbox */
+    vertical-align: middle; /* Alinha o checkbox com o texto */
+    * Ajusta a posição vertical do checkbox */
+}
+
+.senha a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.senha a:hover {
+    text-decoration: underline;
+}
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color:#fff;
+    font-weight: 600;   
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.login:hover {
+    background-color:#22543d;
+    border: 2px solid rgba(37, 91, 39, 0.98);
+    transition: 0.5s;
+}
+.registro {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.registro a {
+    text-decoration: none;
+    color: #fff; /* Cor do link */
+    font-weight: 500; /* Negrito */
+    }
+
+.registro a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+    color: var(--accent); /* Muda a cor do link ao passar o mouse */
+}
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Empilha os links verticalmente */
+        gap: 5px; /* Reduz o espaçamento entre os links */
+    }
+
+    nav {
+        padding: 15px; /* Ajusta o espaçamento interno */
+    }
+}
+input,
+select,
+option,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f6e05e;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f6e05e;
+}
+
+button {
+  background-color: #22543d;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #22543d;
+    color: #f6e05e;
+
+}
+
+.time {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-inicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-foto input {
+  display: flex;
+
+  width: 90%;
+  border-radius: 6px;
+  background: #ccc;
+  border-radius: none;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  bottom: 0;
+}
+.container {
+    max-width: 100%; /* Define a largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção na página */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex;
+    background-color: rgba(34, 84, 61, 0.98); /* Cor de fundo da seção */
+    border: 2px solid rgba(34, 84, 61, 0.98);
+    border-radius: 10px;
+    color:#ffffff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.container h2 {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    font-size: 36px;
+}
+.container p {
+    text-align: center; /* Centraliza o texto dentro da seção */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container form {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+    gap: 15px; /* Espaçamento entre os campos */
+}
+.container form input, {
+    width: 100%; /* Largura total dos campos */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid rgba(37, 91, 39, 0.98);
+    border-radius: 6px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+}
+.form-container {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+    gap: 15px; /* Espaçamento entre os campos */
+    width: 100%; /* Largura total do formulário */
+}
+.form-container input {
+    width: 100%; /* Largura total dos campos */
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid rgba(37, 91, 39, 0.98);
+    border-radius: 6px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+}
+.form-container button {
+    background-color: #22543d; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 6px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    font-size: 16px; /* Tamanho do texto */
+}
+.form-container button:hover {
+    background-color: #68d391; /* Cor de fundo ao passar o mouse */
+    color: #111; /* Cor do texto ao passar o mouse */
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Organiza os campos em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+    .container form {
+        width: 100%; /* Largura total do formulário */
+    }
+    .container h2, .container p {
+        text-align: center; /* Centraliza o texto dentro da seção */
+    }
+}
