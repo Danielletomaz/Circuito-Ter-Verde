@@ -459,7 +459,7 @@ footer {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 .eventos-noticias-imagens {
-    grid-template-columns: repeat(4, 1fr); /* Cria 3 colunas de tamanhos iguais */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanhos iguais */
     display: flex; /* Exibe as imagens lado a lado */
     gap: 20px; /* Espaçamento entre as imagens */
     justify-content: center; /* Centraliza as imagens */
@@ -469,7 +469,7 @@ footer {
 
 .eventos-noticias-imagens img {
     width: 100%; /* Define uma largura padrão */
-    height: 400px; /* Define uma altura padrão */
+    height: 600px; /* Define uma altura padrão */
     object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
     border-radius: 8px; /* Adiciona bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
