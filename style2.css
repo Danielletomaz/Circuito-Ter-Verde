@@ -8,14 +8,7 @@
     --shadow: 0 4px 20px #0002;
 }
 
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
+/* Estilo geral */
 h1 {
     color: #f6e05e;
     font-size: 45px;
@@ -30,12 +23,12 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: var(--primary);
     color: var(--dark);
+    background-color: #22543d;
 }
 
 header {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Serra_dos_%C3%93rg%C3%A3os_II.jpg/1280px-Serra_dos_%C3%93rg%C3%A3os_II.jpg') center/cover no-repeat;
-    height: 200vh;
-    position: relative;
+    height: 100%;
+    margin: 0;
     color: var(--white);
 
 }
@@ -46,7 +39,12 @@ header {
     position: relative;
     color: var(--white);
     
-
+}
+.pag2 {
+    background: url('nacional1.jpg') center/cover no-repeat;
+    height: 200vh;
+    position: relative;
+    color: var(--white);
 }
 .pag3 {
     background: url('tartaruga.jpg') center/cover no-repeat;
@@ -66,23 +64,21 @@ nav {
     background-color: #22543d;
     display: flex;
     align-items: center;
+    flex-direction: row; /* Alinha os itens em linha */
     justify-content:center; /* Espaça os itens entre os lados esquerdo e direito */
-    padding: 24px 10px; /* Ajusta o espaçamento interno */
-    position: ; /* Fixa o menu no topo */
+    padding: 0px; /* Ajusta o espaçamento interno */
+    position: sticky; /* Fixa o menu no topo */
     top: 0; /* Fixa no topo da página */
     left: 0; /* Fixa no lado esquerdo da página */
     width: 100%; /* Ocupa toda a largura da tela */
     z-index: 1000; /* Garante que o menu fique acima de outros elementos */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-    text-align: ; /* Alinha o texto à direita */
+    text-align: center; /* Alinha o texto à direita */
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
 }
 
-.pag1 {
-    max-width: 100%;
-}
-
 .nav-links {
+    display: flex;
     display: flex;
     gap: 2rem; /* Espaçamento entre os links */
     list-style: none;
@@ -94,9 +90,8 @@ nav {
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     transition: color 0.3s ease;
-
 }
 
 .nav-links a:hover {
@@ -113,7 +108,7 @@ nav {
     font-size: 20px; /* Tamanho do texto */
     transition: background 0.3s ease, color 0.3s ease;
     margin-left: auto; /* Alinha o botão à direita */
-    margin-right: 15px; /* Espaçamento à direita */
+    margin-right: 0; /* Espaçamento à direita */
     width: 100px; /* Largura fixa do botão */;
 }
 
@@ -121,6 +116,7 @@ nav {
     background: var(--secondary); /* Cor ao passar o mouse */
     color: var(--white); /* Cor do texto ao passar o mouse */
 }
+
 .imglogo {
     width: 150px;
     height: 150px;
@@ -129,17 +125,7 @@ nav {
     margin-right: 10%;
     margin-left: 5%;
 }
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--white);
-    letter-spacing: 1px;
-    color:#f6e05e;
-    font-size: 40px;
-    margin-right: 10px;
 
-    
-}
 
 .menu-toggle {
     display: none;
@@ -152,19 +138,25 @@ nav {
     
 }
 
-
+main {
+    min-height: 100vh; /* Faz o <main> ocupar pelo menos 100% da altura da tela */
+    display: flex; /* Opcional: permite alinhar o conteúdo dentro do <main> */
+    flex-direction: column; /* Opcional: organiza o conteúdo em coluna */
+    justify-content: center; /* Opcional: centraliza o conteúdo verticalmente */
+    align-items: center; /* Opcional: centraliza o conteúdo horizontalmente */
+}
 
 .banner {
-    position: sticky;
-    top: 40%;
+    position:static;
+    margin-top: 150px;
     left: 10vw;
-    transform: translateY(-40%);
     background: rgba(34,84,61,0.83);
-    padding: 36px 48px;
+    padding: 22px 20px ;
     border-radius: 12px;
     box-shadow: var(--shadow);
-    max-width:100%;
+    max-width:100%;   
 }
+
 
 .banner h1 {
     font-size: 2.3rem;
@@ -188,6 +180,7 @@ nav {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;
+    align-items: center;
 }
 .btn-banner:hover {
     background: var(--accent);
@@ -196,8 +189,7 @@ nav {
 .section {
     padding: 60px 0;
     background: var(--white);
-    font-size:20px;
-    background-color: rgba(34, 84, 61, 0.98);
+    font-size:20px;  
 }
 .p {
     color: #f6e05e;
@@ -209,11 +201,12 @@ nav {
     background: var(--gray);
 }
 
-.container {
+.container2 {
     width: 90vw;
     max-width: 1100px;
     margin: 0 auto;
 }
+
 
 h2 {
     text-align: center;
@@ -238,6 +231,24 @@ h2 {
 }
 .gallery img:hover {
     transform: scale(1.04);
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanhos iguais */
+    gap: 20px;
+    justify-content: center;
+}
+.gallery2 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+.gallery2 img:hover {
+    transform: scale(1.4);
 }
 
 .atividades-lista {
@@ -321,57 +332,7 @@ footer {
     font-size: 1rem;
     margin-top: 0;
 }
-
-/* Responsivo */
-@media (max-width: 800px) {
-    nav {
-        padding: 24px 6vw 0 6vw;
-    }
-    .banner {
-        left: 6vw;
-        padding: 24px 18px;
-        max-width: 96vw;
-    }
-}
-
-@media (max-width: 600px) {
-    .banner {
-        position: static;
-        transform: none;
-        margin: 36px 0 0 0;
-        text-align: center;
-    }
-    .gallery,
-    .atividades-lista {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        position: absolute;
-        top: 64px;
-        right: 2vw;
-        background: rgba(34, 84, 61, 0.98);
-        border-radius: 10px;
-        padding: 10px 0;
-        min-width: 160px;
-        box-shadow: var(--shadow);
-        z-index: 999;
-    }
-    .nav-links.show {
-        display: flex;
-    }
-    .nav-links li {
-        text-align: right;
-        padding: 10px 24px;
-    }
-}
-
+    
 .texto {
     font-size: 20px;
     line-height: 1.6;
@@ -405,6 +366,8 @@ footer {
     box-shadow: 0 2px 16px #0003;
     text-align: center;
     max-width: 100%;
+    width: 100%;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o limite */
 }
 
 .parque-item {
@@ -424,6 +387,9 @@ footer {
     width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
     border-radius: 8px; /* Adiciona bordas arredondadas */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
     transition: transform 0.3s ease; /* Adiciona animação ao passar o mouse */
 }
 
@@ -439,7 +405,6 @@ footer {
     text-align: center; /* Centraliza o texto */
     overflow: visible; /* Garante que o texto não seja cortado */
     visibility: visible; /* Garante que o texto seja visível */
-
 }
 
 #eventos-noticias {
@@ -494,6 +459,7 @@ footer {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 .eventos-noticias-imagens {
+    grid-template-columns: repeat(4, 1fr); /* Cria 3 colunas de tamanhos iguais */
     display: flex; /* Exibe as imagens lado a lado */
     gap: 20px; /* Espaçamento entre as imagens */
     justify-content: center; /* Centraliza as imagens */
@@ -502,7 +468,7 @@ footer {
 }
 
 .eventos-noticias-imagens img {
-    width: 400px; /* Define uma largura padrão */
+    width: 100%; /* Define uma largura padrão */
     height: 400px; /* Define uma altura padrão */
     object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorção */
     border-radius: 8px; /* Adiciona bordas arredondadas */
@@ -526,13 +492,53 @@ footer {
     margin: 0 auto; /* Centraliza o botão */
 }
 
+.btn-link:hover {
+    background: var(--secondary); /* Cor ao passar o mouse */
+    color: var(--white); /* Cor do texto ao passar o mouse */
+}
 p {
     text-align: center; /* Centraliza o texto */
 }
 
-.btn-link:hover {
-    background: var(--secondary); /* Cor ao passar o mouse */
-    color: var(--white); /* Cor do texto ao passar o mouse */
+#localizacao {
+    background-color: #22543d;
+
+}
+
+#parques {
+    background-color:#22543d;
+}
+.contato-horario {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de tamanhos iguais */
+    gap: 20px; /* Espaçamento entre as colunas */
+    margin: 20px auto; /* Centraliza o contêiner */
+    max-width: 100%; /* Define uma largura máxima */
+}
+
+#contato2, #horario-funcionamento {
+    background: #22543d; /* Fundo branco com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+
+#horario-funcionamento ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+}
+
+#horario-funcionamento li {
+    font-size: 1.2rem; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    color: #ffff;
+}
+
+#contato2 h2, #horario-funcionamento h2 {
+    text-align: left; /* Centraliza os títulos */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    color: var(--accent); /* Cor do título */
 }
 
 .bg-section.pedra-alpina{
@@ -602,21 +608,118 @@ p {
 
 /* Responsivo */
 @media (max-width: 768px) {
-    #eventos-noticias {
-        padding: 20px; /* Reduz o espaçamento interno */
-        max-width: 90%; /* Ajusta a largura em telas menores */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    
+    html, body {
+            height: 100%; /* Garante que o HTML e o body ocupem 100% da altura da tela */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove paddings padrão */
+        }
+
+    .nav-links {
+        flex-direction: column; /* Empilha os links verticalmente */
+        gap: 5px; /* Reduz o espaçamento entre os links */
     }
 
-    #eventos-noticias h2 {
-        font-size: 1.6rem; /* Reduz o tamanho do título */
+    nav {
+        position: fixed;
+        padding: 15px; /* Ajusta o espaçamento interno */
     }
 
-    #eventos-noticias p {
-        font-size: 0.9rem; /* Reduz o tamanho do texto */
-    }
-
-    #eventos-noticias ul li a {
-        font-size: 0.8rem; /* Reduz o tamanho dos links */
-    }
+input,
+select,
+option,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f6e05e;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f6e05e;
 }
 
+button {
+  background-color: #22543d;
+  color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #22543d;
+    color: #f6e05e;
+
+}
+
+.time {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-inicio {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-foto input {
+  display: flex;
+
+  width: 90%;
+  border-radius: 6px;
+  background: #ccc;
+  border-radius: none;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  bottom: 0;
+}
+
+
+.banner {
+        position: static;
+        transform: none;
+        width: 90%;
+        text-align: center;
+        margin-top: 200px 20px 10px;
+      }
+    
+    .container {
+        flex-direction: column; /* Organiza os campos em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+    .container form {
+        width: 100%; /* Largura total do formulário */
+    }
+    .container h2, .container p {
+        text-align: center; /* Centraliza o texto dentro da seção */
+    }
+
+}
