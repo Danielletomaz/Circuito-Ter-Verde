@@ -84,13 +84,13 @@ nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    max-width: 30px;
+    max-width: 800px;
 }
 
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    font-size: 300px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
