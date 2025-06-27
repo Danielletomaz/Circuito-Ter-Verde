@@ -15,25 +15,18 @@
 }
 
 
-body {
-    background-image: url('dragão5.webp');
-    background-position: center;
-    background-size: center;
-    min-height: 100vh;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center;
-    margin: 0; /* Remove margens do corpo */
-    padding: 0; /* Remove espaçamento interno do corpo */
-
-}
+html, body {
+        background-image: url("dragão5.webp");
+        height: 100%; /* Garante que o HTML e o body ocupem 100% da altura da tela */
+        margin: 0; /* Remove margens padrão */
+        padding: 0; /* Remove paddings padrão */
+    }
 main {
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */    
-    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela */  
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    flex-direction: column; /* Organiza os itens em coluna */   
-    padding: 20px; /* Adiciona espaçamento interno */   
-    margin-top: 200px;
+    min-height: 100vh; /* Faz o <main> ocupar pelo menos 100% da altura da tela */
+    display: flex; /* Opcional: permite alinhar o conteúdo dentro do <main> */
+    flex-direction: column; /* Opcional: organiza o conteúdo em coluna */
+    justify-content: center; /* Opcional: centraliza o conteúdo verticalmente */
+    align-items: center; /* Opcional: centraliza o conteúdo horizontalmente */
 }
 header {
     height: 200px; /* Define a altura do cabeçalho */
@@ -44,39 +37,37 @@ header {
    
 }
 nav {
-    position: sticky; /* Fixa o menu no topo da página */
-    width: 100%; /* Ocupa toda a largura da tela */
-    z-index: 10; /* Garante que o menu fique acima de outros elementos */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
-    text-align: center;
+    background-color: #22543d;
     display: flex;
     align-items: center;
-    justify-content: center; /* Espaça os itens */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
+    flex-direction: row; /* Alinha os itens em linha */
+    justify-content:center; /* Espaça os itens entre os lados esquerdo e direito */
+    padding: 0px; /* Ajusta o espaçamento interno */
+    position: fixed ; /* Fixa o menu no topo */
+    top: 0; /* Fixa no topo da página */
+    left: 0; /* Fixa no lado esquerdo da página */
+    width: 100%; /* Ocupa toda a largura da tela */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    text-align: center; /* Alinha o texto à direita */
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
-    background-color: #22543d; /* Cor de fundo */
-    
 }
 
 .nav-links {
     display: flex;
-    gap: 10px; /* Espaçamento entre os links */
-    list-style: none; /* Remove os marcadores da lista */
-    margin: 0; /* Remove margens */
-    padding: 0; /* Remove espaçamento interno */
-    flex-wrap: wrap; /* Permite que os links se movam para a próxima linha se necessário */
-    justify-content: center; /* Centraliza os links horizontalmente */
-    align-items: center; /* Alinha os links verticalmente */
-    flex-direction: row; /* Organiza os links em linha */
-    flex-grow: 1; /* Permite que os links ocupem o espaço disponível */
+    display: flex;
+    gap: 2rem; /* Espaçamento entre os links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 800px;
 }
 
 .nav-links a {
     color: var(--white);
     text-decoration: none;
-    font-size: 20px; /* Tamanho do texto dos links */
+    font-size: 25px;
     transition: color 0.3s ease;
-    padding: 10px 15px; /* Adiciona espaçamento interno aos links */
 }
 
 .nav-links a:hover {
@@ -126,15 +117,13 @@ nav {
 
 
 .banner {
-    position: sticky;
     top: 40%;
     left: 10vw;
-    transform: translateY(-40%);
     background: rgba(34,84,61,0.83);
-    padding: 36px 48px;
+    padding: 22px 20px ;
     border-radius: 12px;
     box-shadow: var(--shadow);
-    max-width:100%;
+    max-width:100%;    
 }
 
 .banner h1 {
@@ -228,7 +217,6 @@ nav {
     accent-color: var(--gray);
     width: 20px; /* Largura do checkbox */
     vertical-align: middle; /* Alinha o checkbox com o texto */
-    * Ajusta a posição vertical do checkbox */
 }
 
 .senha a {
@@ -277,100 +265,33 @@ footer {
     background: var(--primary);
     color: var(--white);
     text-align: center;
-    padding: 20px 0;
+    padding:  0;
     font-size: 1rem;
     margin-top: 0;
 }
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column; /* Empilha os links verticalmente */
-        gap: 5px; /* Reduz o espaçamento entre os links */
-    }
-
-    nav {
-        padding: 15px; /* Ajusta o espaçamento interno */
-    }
-}
-input,
-select,
-option,
-button {
-  width: 100%;
-  padding: 8px;
-  margin-top: 3px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #f6e05e;
-}
-h1 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #f6e05e;
-}
-
-button {
-  background-color: #22543d;
-  color: white;
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #22543d;
-    color: #f6e05e;
-
-}
-
-.time {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.time-inicio {
-  display: flex;
-  flex-direction: column;
-}
-
-.file-foto input {
-  display: flex;
-
-  width: 90%;
-  border-radius: 6px;
-  background: #ccc;
-  border-radius: none;
-  cursor: pointer;
-}
-
-footer {
-  width: 100%;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  bottom: 0;
-}
 .container {
-    max-width: 100%; /* Define a largura máxima da seção */
+    max-width: 90%; /* Define a largura máxima da seção */
     margin: 0 auto; /* Centraliza a seção na página */
     padding: 20px; /* Adiciona espaçamento interno */
-    display: flex;
     background-color: rgba(34, 84, 61, 0.98); /* Cor de fundo da seção */
     border: 2px solid rgba(34, 84, 61, 0.98);
     border-radius: 10px;
     color:#ffffff;
     padding: 30px 40px;
     box-shadow: 0 0 10px rgb(0, 0, 0);
+    top:auto;
+}
+.container2 {
+    max-width: 90%; /* Define a largura máxima da seção */
+    margin: 0 auto; /* Centraliza a seção na página */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: rgba(34, 84, 61, 0.98); /* Cor de fundo da seção */
+    border: 2px solid rgba(34, 84, 61, 0.98);
+    border-radius: 10px;
+    color:#ffffff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    top:auto;
 }
 .container h2 {
     text-align: center; /* Centraliza o texto dentro da seção */
@@ -380,13 +301,15 @@ footer {
     text-align: center; /* Centraliza o texto dentro da seção */
     font-size: 20px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
+
 .container form {
     display: flex;
     flex-direction: column; /* Organiza os campos em coluna */
     gap: 15px; /* Espaçamento entre os campos */
 }
-.container form input, {
+.container form input {
     width: 100%; /* Largura total dos campos */
     padding: 10px; /* Espaçamento interno */
     border: 2px solid rgba(37, 91, 39, 0.98);
@@ -407,8 +330,8 @@ footer {
     font-size: 16px; /* Tamanho do texto */
 }
 .form-container button {
-    background-color: #22543d; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
+    background-color: #f5f8f7; /* Cor de fundo do botão */
+    color:#22543d; /* Cor do texto */
     padding: 10px; /* Espaçamento interno */
     border: none; /* Remove a borda padrão */
     border-radius: 6px; /* Bordas arredondadas */
@@ -419,15 +342,25 @@ footer {
     background-color: #68d391; /* Cor de fundo ao passar o mouse */
     color: #111; /* Cor do texto ao passar o mouse */
 }
+
+label, input, select, textarea, button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+fieldset {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  .resumo-container {
+    display: none; 
+    margin-top: 20px; 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    border-radius: 5px;
+  }
+
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Organiza os campos em coluna */
-        align-items: center; /* Centraliza os itens horizontalmente */
-    }
-    .container form {
-        width: 100%; /* Largura total do formulário */
-    }
-    .container h2, .container p {
-        text-align: center; /* Centraliza o texto dentro da seção */
-    }
+    
 }
