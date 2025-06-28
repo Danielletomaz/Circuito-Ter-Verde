@@ -34,27 +34,27 @@ header {
 }
 
 .pag1 {
-    background: url('img2.jpg') center/cover no-repeat;
+    background: url('imagens/img2.jpg') center/cover no-repeat;
     height: 200vh;
     position: relative;
     color: var(--white);
     
 }
 .pag2 {
-    background: url('nacional1.jpg') center/cover no-repeat;
+    background: url('imagens/nacional1.jpg') center/cover no-repeat;
     height: 200vh;
     position: relative;
     color: var(--white);
 }
 .pag3 {
-    background: url('tartaruga.jpg') center/cover no-repeat;
+    background: url('imagens/tartaruga.jpg') center/cover no-repeat;
     height: 200vh;
     position: relative;
     color: var(--white);
 }
 
 .pag4 {
-    background: url('estadual14.jpg') center/cover no-repeat;
+    background: url('imagens/estadual14.jpg') center/cover no-repeat;
     height: 200vh;
     position: relative;
     color: var(--white);
@@ -541,9 +541,6 @@ p {
     color: var(--accent); /* Cor do título */
 }
 
-.bg-section.pedra-alpina{
-    background-image: url('pedraalpina.gif');
-}
 .bg-section.trilha {
     background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/59/35/35/visita-ao-parque-em-feverei_r.jpg?w=1400&h=-1&s=1');
 }
@@ -552,58 +549,6 @@ p {
 }
 .bg-section.mirante {
     background-image: url('https://netdiario.com.br/wp-content/uploads/2025/04/zmochila-trilha-360-2-1536x931.jpg');
-}
-.bg-section.trilha-suspensa {
-    background-image: url('trilhasuspensa.gif');
-}
-.bg-section.mozart-catao {
-    background-image: url('mozartcatao.gif');
-}
-.bg-section.cartaopostal {
-    background-image: url('cartaopostal.gif');
-}
-
-.bg-section.pedra-sino {
-    background-image: url('pedradosino.gif');
-}
-.bg-section.parque {
-    background-image: url('parquenacional.gif');
-}
-.bg-section.trilha-do-jacu {
-    background-image: url('jacu.gif');
-}
-.bg-section.trilha-tangara {
-    background-image: url('tangara.gif');
-}
-.bg-section.trilha-tartaruga {
-    background-image: url('tartaruga1.gif');
-}
-.bg-section.trilha-camelo {
-    background-image: url('camelo.gif');
-}
-.bg-section.vidocq {
-    background-image: url('vidoc.gif');
-}
-
-.bg-section.cabeca-dragao {
-    background-image: url('cabecadragao.gif');
-}
- 
-.bg-section.caixa-fosforo {
-    background-image: url('fosforo.gif');
-}
-
-.bg-section.trilha-elefante {
-    background-image: url('elefante.gif');
-}
-.bg-section.dois-bicos {
-    background-image: url('doisbicos.gif');
-}
-.bg-section.municipal {
-    background-image: url('parquemunicipal.gif');
-}
-.bg-section.estadual {
-    background-image: url('parqueestadual.gif');
 }
 
 /* Responsivo */
