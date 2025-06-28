@@ -68,7 +68,9 @@ Este site tem como foco apresentar:
 1. Clonar ou repositório :
    ``` bash
    git clone https://github.com/Danielletomaz/Circuito-Ter-Verde.git
-
+2. Para acessar a página do visitante basta utilizar o login: visitante ; Senha: visitante123 ;
+   
+3. Para acessar a página do administrador basta utilizar o login: adm ; senha: 123 ; 
 ---
 # # 🔎 Funcionalidades
 
@@ -86,8 +88,6 @@ Este site tem como foco apresentar:
 - Parque Nacional da Serra dos Órgãos  
 - Parque Natural Municipal Montanhas de Teresópolis  
 - Parque Estadual dos Três Picos  
-- Parque Natural Municipal de Teresópolis
-
 ---
 
 # # 🤝 Como Contribuir
