@@ -16,7 +16,7 @@
 
 
 html, body {
-        background-image: url("dragão5.webp");
+        background-image: url("imagens/dragão5.webp");
         height: 100%; /* Garante que o HTML e o body ocupem 100% da altura da tela */
         margin: 0; /* Remove margens padrão */
         padding: 0; /* Remove paddings padrão */
